@@ -1,0 +1,19 @@
+<project xmlns:ivy="antlib:org.apache.ivy.ant" name="" default="run">
+  <target name="retrieve">
+    <ivy:retrieve/>
+  </target>
+  <target name="client">
+    <jar destfile="lib/spark-client-0.0.1.jar" basedir="client"/>
+  </target>
+  <target name="run" depends="retrieve,client">
+    <java classname="jdk.nashorn.tools.Shell" classpath="lib/*" fork="true">
+      <arg value="app.js"/>
+    </java>
+  </target>
+  <target name="clean">
+    <delete dir="lib"/>
+  </target>
+  <target name="distclean" depends="clean">
+    <delete dir="cache"/>
+  </target>
+</project>

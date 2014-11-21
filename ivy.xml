@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+  <info organisation="" module=""/>
+  <dependencies defaultconf="default">
+    <dependency org="com.sparkjava" name="spark-core" rev="2.0.0"/>
+    <dependency org="org.slf4j" name="slf4j-nop" rev="1.7.2"/>
+  </dependencies>
+</ivy-module>
