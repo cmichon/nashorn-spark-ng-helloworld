@@ -1,4 +1,5 @@
 <project xmlns:ivy="antlib:org.apache.ivy.ant" name="" default="run">
+  <!--setproxy proxyhost="" proxyport="" proxyuser="" proxypassword=""/-->
   <target name="retrieve">
     <ivy:retrieve/>
   </target>
