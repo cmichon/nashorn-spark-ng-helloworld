@@ -7,7 +7,6 @@ with(new JavaImporter(
   SparkBase.staticFileLocation("public");
 
   Spark.head('/', function(request, response) {
-    return '';
   });
 
   Thread.currentThread().join();
