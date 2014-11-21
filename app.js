@@ -3,7 +3,6 @@ with(new JavaImporter(
   Packages.spark
 )) {
 
-//SparkBase.externalStaticFileLocation("public");
   SparkBase.staticFileLocation("public");
 
   Spark.head('/', function(request, response) {
